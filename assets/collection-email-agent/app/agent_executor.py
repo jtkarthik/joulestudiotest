@@ -14,7 +14,7 @@ from a2a.types import (
 from a2a.utils import new_agent_text_message, new_task
 from a2a.utils.errors import ServerError
 
-from agent import SampleAgent
+from agent import CollectionEmailAgent as SampleAgent
 from load_skill_resources import get_load_skill_resource_tool
 from mcp_tools import get_mcp_tools, get_user_token
 

@@ -1,0 +1,66 @@
+{
+  "mcpServers": {
+    "collection-email-mcp": {
+      "tools": {
+        "get_customer_open_items": {
+          "description": "Returns open invoice items for a customer",
+          "response": {
+            "value": [
+              {
+                "InvoiceID": "INV-2024-001",
+                "Amount": 5000.00,
+                "Currency": "USD",
+                "DueDate": "2024-11-01",
+                "DaysOverdue": 45
+              },
+              {
+                "InvoiceID": "INV-2024-002",
+                "Amount": 3200.00,
+                "Currency": "USD",
+                "DueDate": "2024-11-15",
+                "DaysOverdue": 31
+              }
+            ]
+          }
+        },
+        "get_payment_history": {
+          "description": "Returns payment history for a customer",
+          "response": {
+            "value": [
+              {
+                "InvoiceID": "INV-2024-PRE-001",
+                "PaidAmount": 4500.00,
+                "Currency": "USD",
+                "PaymentDate": "2024-09-20",
+                "DaysLate": 5
+              },
+              {
+                "InvoiceID": "INV-2024-PRE-002",
+                "PaidAmount": 2100.00,
+                "Currency": "USD",
+                "PaymentDate": "2024-08-05",
+                "DaysLate": 0
+              },
+              {
+                "InvoiceID": "INV-2024-PRE-003",
+                "PaidAmount": 7800.00,
+                "Currency": "USD",
+                "PaymentDate": "2024-07-18",
+                "DaysLate": 12
+              }
+            ]
+          }
+        },
+        "get_dunning_status": {
+          "description": "Returns dunning status for a customer",
+          "response": {
+            "DunningLevel": 1,
+            "LastDunningDate": "2024-11-10",
+            "NextDunningDate": "2024-12-10",
+            "BlockedForDunning": false
+          }
+        }
+      }
+    }
+  }
+}
