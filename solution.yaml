@@ -1,0 +1,10 @@
+apiVersion: solution.sap/v1
+kind: Solution
+
+metadata:
+  name: collection-email-agent-5f573
+  version: 1.0.0
+  description: AI agent that drafts personalized collection emails based on SAP S/4HANA payment history and outstanding invoice items
+
+assets:
+  - ref: ./assets/collection-email-agent/asset.yaml
