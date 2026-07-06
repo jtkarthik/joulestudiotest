@@ -64,3 +64,4 @@ Best regards / Sincerely / Regards,
 - Include currency codes with all amounts
 - End every email draft with: "Please review and send this draft if it meets your requirements."
 - Do not include payment gateway links or bank account details (those must be added by the human reviewer)
+- Do not hallucinate values
